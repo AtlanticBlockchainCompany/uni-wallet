@@ -32,9 +32,9 @@ module.exports = function(options) {
         SOFTWARE_UPDATE_REFERENCE_ACCOUNT_NAME: JSON.stringify(options.SOFTWARE_UPDATE_REFERENCE_ACCOUNT_NAME || "ppcoreupdates"),
         APP_VERSION: JSON.stringify(packageJSON.version),
         __ELECTRON__: !!options.electron,
-        CORE_ASSET: JSON.stringify('PPY'),
-        BLOCKCHAIN_URL: JSON.stringify(options.blockchain || 'wss://pma.blockveritas.co:8089/'),
-        FAUCET_URL: JSON.stringify(options.faucet || "https://faucet.peerplays.download/faucet"),
+        CORE_ASSET: JSON.stringify('UNI'),
+        BLOCKCHAIN_URL: JSON.stringify(options.blockchain || 'ws://ec2-52-59-249-95.eu-central-1.compute.amazonaws.com:8090'),
+        FAUCET_URL: JSON.stringify(options.faucet || "http://ec2-52-59-249-95.eu-central-1.compute.amazonaws.com:5000"),
         FAUCET_FILE: JSON.stringify(options.faucetFile || "faucetUrls"),
         BITSHARES_WS: JSON.stringify(options.BITSHARES_WS || 'wss://bitshares.openledger.info/ws'),
     };
