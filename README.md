@@ -1,9 +1,9 @@
-Peerplays-Core-GUI
+Uni-Wallet
 ============
 
 ### Getting started
 
-Peerplays-UI depends on Node.js. While it should work using versions as old as 0.12.x, it is recommended to use v5.x.
+Uni-UI depends on Node.js. While it should work using versions as old as 0.12.x, it is recommended to use v5.x.
 
 On Ubuntu and OSX, the easiest way to install Node is to use the [Node Version Manager](https://github.com/creationix/nvm).
 For Windows users there is [NVM-Windows](https://github.com/coreybutler/nvm-windows).
