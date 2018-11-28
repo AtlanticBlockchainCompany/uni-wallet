@@ -34,7 +34,7 @@ module.exports = function(options) {
         __ELECTRON__: !!options.electron,
         CORE_ASSET: JSON.stringify('UNI'),
         BLOCKCHAIN_URL: JSON.stringify(options.blockchain || 'ws://ec2-52-59-249-95.eu-central-1.compute.amazonaws.com:8090'),
-        FAUCET_URL: JSON.stringify(options.faucet || "http://ec2-52-59-249-95.eu-central-1.compute.amazonaws.com:5000"),
+        FAUCET_URL: JSON.stringify(options.faucet || 'http://ec2-52-59-249-95.eu-central-1.compute.amazonaws.com:5000/api/v1/accounts'),
         FAUCET_FILE: JSON.stringify(options.faucetFile || "faucetUrls"),
         BITSHARES_WS: JSON.stringify(options.BITSHARES_WS || 'wss://bitshares.openledger.info/ws'),
     };
