@@ -132,13 +132,7 @@ class Header extends React.Component {
 							</span>
 						</Link>
 
-						{/* <Link to="/games" className={classNames({"nav__link": true, "active": (/\/games/.test(this.props.pathname))})} activeClassName="active">
-							<span className="nav__linkAlign">
-								<span className="nav__linkIcon nav__linkIcon-blank icon-star"></span>
-								<span className="nav__linkIcon nav__linkIcon-filled icon-star-filled"></span>
-								<Translate component="span" className="nav__linkText" content="header.play" />
-							</span>
-						</Link> */}
+						
 
 						{/*<Link to="/exchange/PIXEL.BITCOIN_TESTPLAYS" className={classNames({"nav__link": true, "active": (/\/exchange/.test(this.props.pathname))})} activeClassName="active">
 							<span className="nav__linkAlign">
