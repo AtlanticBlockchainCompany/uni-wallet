@@ -132,12 +132,15 @@ let routes = (
         }} onLeave={() => {
             store.dispatch(AppActions.setCurrentLocation(null));
         }} />
-        */}
-		<Route path="/games" component={requireAuthentication(Games)} onEnter={() => {
+		*/}
+		
+
+		{/* <Route path="/games" component={requireAuthentication(Games)} onEnter={() => {
             store.dispatch(AppActions.setCurrentLocation(LocationConstants.GAMES));
         }} onLeave={() => {
             store.dispatch(AppActions.setCurrentLocation(null));
-        }} />
+		}} /> */}
+		
 		<Route path="/games/rock-paper-scissors" onEnter={() => {
             store.dispatch(AppActions.setCurrentLocation(LocationConstants.GAMES_ROCK_PAPER_SCISSOR_TOURNAMENTS));
         }} onLeave={() => {
