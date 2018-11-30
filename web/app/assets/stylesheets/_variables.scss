@@ -15,13 +15,14 @@ $headerHeight:			55px;
 
 // -------------------------
 // Colors--->
-$black:					#000;
+$black:					#232b2b;
 $white:					#fff;
 $red:  					#f45c63;
 $red2:  				#f179a3;
 $green3:				#13d4b7;
-$clear-color:			$black;
-$clear-color2:			$white;
+$green4:                #0fad95;
+$clear-color:			$white;
+$clear-color2:			$green4;
 //--------------------------
 //<---Colors
 
@@ -134,23 +135,23 @@ $light-blue: 			#33b7ef;
 $green:					#00fe95;
 $green2:				#12cd6e;
 $green3:				#13d4b7;
-$new-blue: 				#1c2254;
-$new-blue2: 			#0a76e3;
+$new-blue: 				$white;
+$new-blue2: 			black;
 $new-blue3: 			#3c4680;
 $new-blue4: 			#8c9ddd;
 $new-blue5: 			#232c6c;
 $new-blue6: 			#20f3ec;
 $new-blue7: 			#9cc8db;
-$new-blue8: 			#1b3c8c;
+$new-blue8: 			$black;//#1b3c8c;
 $new-blue9: 			#b8bde7;
 $new-blue11: 			#38407b;
 $new-blue12: 			#3774b7;
 $new-blue13: 			#294e77;
 $new-blue14: 			#43518d;
-$new-blue15: 			#2e78e6;
-$new-blue16: 			#1819d2;
+$new-blue15: 			$black;//#2e78e6;
+$new-blue16: 			$black;//#1819d2;
 
-$gray1:					#464f58;
+$gray1:					$black;//#464f58;
 $gray2:					rgba( $clear-color2, .6 );
 $gray3:					#cacaca;
 $gray4:		 			#ebebeb;
@@ -159,12 +160,13 @@ $gray-color2: 			#e1e1e1;
 $white-transp:			rgba( $clear-color2, .06 );
 $white-transp2:			rgba( $clear-color2, .15 );
 $dark:		 			#17191a;
-$dark2:		 			#2c3370;
-$faded-color:			#818b95;
+//makes text colour brighter
+$dark2:		 			$black;//#2c3370;
+$faded-color:			$black;//#818b95;
 
-
+//table header and side nav
 $color-prime:			$new-blue;
-$color-second:			$light-blue;
+$color-second:			$black;
 $color-second-hover:	lighten( $light-blue, 10% );
 $color-second-active:	darken( $light-blue, 10% );
 $color-second-bd-color: darken( $light-blue, 20% );
@@ -176,15 +178,15 @@ $color-add2-bd-color:	$new-blue3;
 $color-add3:			$new-blue8;
 $color-add3-text:		$clear-color2;
 $text-color-bg:			$clear-color2;
-$border-color: 			$white-transp;
+$border-color: 			$white;
 $border-color2: 		$white-transp2;
 $border-color3: 		rgba($new-blue9, .5);
-$text-color: 			$gray1;
-$text-color2: 			$gray2;
+$text-color: 			$black;
+$text-color2: 			$black;
 $label-color: 			$new-blue9;
-
-$body-bg:               radial-gradient(circle, #2660ca, $dark2);
-$body-login-bg:         radial-gradient(circle, #2660ca, $dark2);
+// background PS table is transparent
+$body-bg:               $white; //radial-gradient(circle, #2660ca, $dark2);
+$body-login-bg:         #232b2b; //radial-gradient(circle, #2660ca, $dark2);
 $footer-bg:				$new-blue5;
 $footer-bd-color:		$new-blue5;
 $footer-color:			$gray3;
@@ -195,7 +197,7 @@ $delimiter-bd-shadow:	0 1px 0 $white-transp;
 $delimiter-bd-shadow2:	0 1px 0 rgba($white-transp, .04);
 $aside-bg:				$color-prime;
 //$aside-title-color:		rgba( $new-blue7, .8 );
-$aside-title-color:		$clear-color2;
+$aside-title-color:		$black;
 $aside-val-sum-color:	$new-blue6;
 $aside-val-unit-color:	rgba( $aside-val-sum-color, .7 );
 $aside-unit-color:		rgba( $new-blue7, .8 );
@@ -207,21 +209,21 @@ $table-hiddenLast-shadow:0 -3px 3px rgba(18, 19, 24, 0.25);
 $table-shadow:			0 7px 15px rgba(0, 0, 0, 0.2);
 $table-shadow2:			0 7px 15px rgba(0, 0, 0, 0.05);
 $shadow:				0 3px 20px rgba(0, 0, 0, 0.24);
-$table-title-color:		$clear-color2;
-$th-color:				$clear-color2;
+$table-title-color:		$black;
+$th-color:				$black;
 $th-bg:					$color-prime;
 $th-bd-color:			$color-prime;
-$heading-color:			$clear-color2;
-$h1-color:				$dark;
+$heading-color:			$black;
+$h1-color:				$black;
 $btn-transp1-color:		rgba( $clear-color2, .8 );
 $tab-bg:				$color-prime;
 $tab-bg-active:			$white-transp;
 $tab-color:				$new-blue9;
-$tab-color-active:		$clear-color2;
+$tab-color-active:		$black;
 $tab-deploy-bg:			$white-transp;
 $asset-bg:				transparent;
 $asset-label-color:		rgba( $new-blue9, .8 );
-$assets-unit-color:		$clear-color2;
+$assets-unit-color:		$black;
 $mark-color:			$green3;
 $box-inner-bg:			$white-transp;
 $box-inner-shadow:		inset 0 2px 7px rgba(0, 0, 0, 0.35);

@@ -99,11 +99,16 @@ class Side extends React.Component {
         // coreSymbol = asset_utils.getSymbol(coreSymbol);
 
 	    let availableKeys = Object.keys(availableBalances);
-
+        const tempStyle = {
+            'background-color':'#232b2b'
+        }
+        const tempStyle1 = {
+            'background-color':'#464f58'
+        }
         return (
-            <aside className="aside">
+            <aside style={tempStyle} className="aside">
                 <div className="nav__user dd dd-hover">
-                    <div className="nav__userDDTrigger ddTrigger">
+                    <div style={tempStyle} className="nav__userDDTrigger ddTrigger">
                         <div className="nav__userPic">
                             <AccountImage size={{height: 40, width: 40}}
                                           className="aside__headPic"
@@ -115,7 +120,7 @@ class Side extends React.Component {
                             <div className="nav__userName">{this.props.account}</div>
                         </div>
                     </div>
-                    <div className="nav__userDDMenu ddMenu">
+                    <div style={tempStyle1} className="nav__userDDMenu ddMenu">
                         <a href="#/logout" className="logout" onClick={this.onLogoutClick.bind(this)}><Translate component="span" className="" content="dashboard.side.logout" /></a>
                     </div>
                 </div>

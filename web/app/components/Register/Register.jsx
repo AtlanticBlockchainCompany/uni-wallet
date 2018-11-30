@@ -69,7 +69,7 @@ class Register extends React.Component {
                         <div className="dialog dialog-login">
                             <LanguageSwitcher />
                             <Logo />
-                            <Translate component="h1" className="h1" content="sign_up.welcome" tm={<span className="tm">TM</span>}/>
+                            <Translate component="h1" className="h1" content="sign_up.welcome" />
                             <Translate component="h2" className="h2" content="sign_up.please_create" />
                             <div className="form">
                                 <RegisterForm errors={this.props.errors} registerStatus={this.props.registerStatus} onClickLogin={this.onClickLogin.bind(this)} onSubmit={this.handleSubmit.bind(this)}/>
