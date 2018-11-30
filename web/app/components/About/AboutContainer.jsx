@@ -53,11 +53,7 @@ class AboutContainer extends React.Component {
 
                             <div className="descr__listWrap">
                                 <ul className="descr__list">
-                                    <li className="descr__li">
-                                        <Link to="/games" className="descr__item">
-                                            <Translate component="span" className="" content="about.library_link" />
-                                        </Link>
-                                    </li>
+                                   
                                     {/*<li className="descr__li">
                                         <Link to="/exchange/PIXEL.BITCOIN_TESTPLAYS" className="descr__item">
                                             <Translate component="span" className="" content="about.exchange_link" />
