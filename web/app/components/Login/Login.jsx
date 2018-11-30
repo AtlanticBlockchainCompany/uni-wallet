@@ -77,6 +77,9 @@ class Login extends React.Component {
     }
 
     render() {
+        const tempBtn = {
+            'background-color': '#232b2b'
+        }
         return (
             <div className="main">
                 <div className="yHelper active"></div>
@@ -89,16 +92,16 @@ class Login extends React.Component {
 
                             
 
-                            <div className="form">
+                            <div  className="form">
                                 <LoginForm errors={this.props.errors} btnStatus={this.props.status}
                                            onSubmit={this.handleSubmit.bind(this)}
                                            navigateToForgotPassword={this.navigateToForgotPassword.bind(this)} />
                             </div>
                             <div className="login__footer">
                                 <Translate component="div" className="login__footerTitle" content="login.login_form_sign_up_label" />
-                                <button className="btn btn-sign btn-fsz-18" onClick={this.navigateToSignUp.bind(this)}>
-                                    <Translate className="btnText" content="auth.sign_up_btn" />
-                                </button>
+                                <button style={tempBtn} className="btn btn-sign btn-fsz-18" onClick={this.navigateToSignUp.bind(this)}>
+                                    <Translate  className="btnText" content="auth.sign_up_btn" />
+                                </button> 
                             </div>
                         </div>
                     </div>

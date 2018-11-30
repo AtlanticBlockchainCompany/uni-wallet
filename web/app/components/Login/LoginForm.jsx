@@ -70,30 +70,34 @@ class LoginForm extends React.Component {
 
 		let RestoreBtn;
 
+		const tempBtn = {
+            'background-color': '#232b2b !important'
+        }
+
 		switch(btnStatus) {
 			case 'default':
                 RestoreBtn = (
-					<button className="btn btn-sbm btn-fsz-18" type="submit" disabled={invalid || submitting || asyncValidating}><Translate className="btnText" content="login.login_btn" /></button>
+					<button style={tempBtn} className="btn btn-sbm btn-fsz-18" type="submit" disabled={invalid || submitting || asyncValidating}><Translate className="btnText" content="login.login_btn" /></button>
 				);
 				break;
 			case 'loading':
 
                 RestoreBtn = (
-					<button className="btn btn-sbm btn-fsz-18 btn-loader" type="button" disabled={true}>
+					<button style={tempBtn} className="btn btn-sbm btn-fsz-18 btn-loader" type="button" disabled={true}>
                         <span className="loader loader-white loader-xs"/>
                     </button>
 				);
 				break;
 			case 'done':
                 RestoreBtn = (
-					<button className="btn btn-sbm btn-fsz-18"  disabled={true}>
+					<button style={tempBtn} className="btn btn-sbm btn-fsz-18"  disabled={true}>
 						<span className="loaderIcon icon-verify"/>
 						<Translate className="btnText" content="buttons.done" />
 					</button>
 				);
 				break;
 		}
-
+		
 		return (
 			<form onSubmit={handleSubmit}>
 

@@ -180,7 +180,8 @@
 .nav__user{
 	display: block;
 	margin: 5px 5px 10px;
-	background: #2c3370;
+	// right side nav that has username
+	background: $black;
 	&Info{
 		overflow: hidden;
 	}
